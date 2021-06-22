@@ -1,0 +1,29 @@
+#sc {
+font-size: 20px;    
+color: lightseagreen;
+background-color: white;
+border: 1px solid lightseagreen;
+border-radius: 29%;
+width: 200px;
+height: 30px;
+
+}
+
+#pb {
+font-size: 30px;
+border-radius: 50%;
+color: white ;
+background-color: lightseagreen;
+width: 50px;
+height: 50px;
+border: lightseagreen;
+}
+
+#ca {
+font-size: 15px;
+background-color: blue;
+color: white;
+width: 200px;
+height: 50px;
+box-shadow: 10px 5px 5px black;
+}
