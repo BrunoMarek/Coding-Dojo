@@ -1,0 +1,84 @@
+#container {
+    background-color: silver;
+    width: 950px;
+    align-items: center;
+    margin: 0px auto;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.top {
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.middle {
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.bottom {
+    height: 300px;
+    background-color: blue;
+    display: flex;
+    flex: content;
+    align-items: center;
+    justify-content: center;
+    margin-top:  30px;
+    
+}
+
+.code {
+    height: 200px;
+    margin-right: 40px;
+}
+
+
+.punk {
+    height: 200px;
+    margin-left: 80px;
+}
+
+.mummy {
+    height: 200px;
+    margin-right: 80px;
+}
+.gore {
+    height: 200px;
+    
+}
+
+.crabb {
+    height: 200px;
+}
+
+.justice {
+    height: 200px;
+    margin-right: 80px;
+}
+
+.kimono {
+    height: 200px;
+}
+
+.sello {
+    height: 200px;
+    margin-left: 80px;
+
+}
+
+.credits {
+    text-align: center;
+}
