@@ -1,0 +1,31 @@
+.nav{
+    background-color: gray;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title {
+    
+    }
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    color: white;
+    list-style: none;
+}
+
+    .btn{
+        background-color: lightskyblue;
+        color: white;
+        border: 2px;
+        padding: 2px;
+        box-shadow: 2px 2px black ; 
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
