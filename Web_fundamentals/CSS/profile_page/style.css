@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* start fixbar */
+
+.contentfb {
+    background-color:black;
+    display: flex;
+}
+
+.fixbar {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.fixbar ul, .x {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.fbutton {
+    background-color: lightskyblue;
+    color: white;
+    padding: .5em 1em;
+    border: 0;
+}
+
+/* End fixbar */
+/* /* Start card */
+
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.leftcolumn, .rightcolumn {
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+.rightcolumn{
+    flex: 2;
+}
+
+
+.user-card, .card {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid grey;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: cyan;
+    height: 125px;
+    margin-bottom: 70px;
+}
+
+.body {
+    padding: 20px;
+}
+
+.body h1, .body h2, .body h3, .body p {
+    margin: 20px 0px;
+}
+
+.userphoto{
+    border-radius: 50%;
+    background-color: white;
+    height: 190px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.icon {
+    height: 20px;
+}
+
+a {
+    color: blue;
+}
+
+.header {
+    background-color: grey;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.friendpic {
+    border-radius: 50%;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.friends {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.picleft, .decline {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.dates {
+    font-size: 20px;
+    color: silver;
+}
+
+.bottom {
+    padding: 20px;
+    border-top: 2px solid grey;
+}
+
+.connections {
+    background-color: silver;
+    color: #333;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 24px;
+    padding: 0 10px;
+    margin-right: 10px;
+}
