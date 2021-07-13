@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	width: 70%;
+	align-items: center;
+	text-align: center;
+}
+
+#submit{
+	background-color:grey;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#low{
+	width: 250px;
+	height: 250px;
+	background-color: red;
+	margin: auto;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+#high{
+	width: 250px;
+	height: 250px;
+	background-color: red;
+	margin: auto;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.result{
+	width: 250px;
+	height: 250px;
+	background-color: green;
+	margin: auto;
+	text-align: center;
+	font-size: 1.5em;
+}
