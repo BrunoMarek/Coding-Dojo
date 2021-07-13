@@ -1,0 +1,35 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Result of Dojo Survey</title>
+            <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="content">
+            <form action="/return" method="POST">
+                <h3>Submitted info</h3>
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td>{{name}}</td>
+                    </tr>
+                    <tr>
+                        <th>Location:</th>
+                        <td>{{ location }}</td>
+                    </tr>
+                    <tr>
+                        <th>Favorite Language:</th>
+                        <td>{{ language }}</td>
+                    </tr>
+                    <tr>
+                        <th>Comment:</th>
+                        <td>{{ comment }}</td>
+                    </tr>
+                </table>
+                <button name="btnx" value="back">Go back</button>
+            </form>
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: yellow;
+}
+.main, .content {
+	margin: 0 auto;
+	width: 70%;
+	align-items: center;
+	text-align: center;
+    background-color: gray;
+}
+
+input, select {
+    width: 50%;
+    height: 50%;
+}
+
+table{
+    display: flex;
+    align-items: flex-start;
+    gap: 1,5em;
+}
+
+#send{
+    background-color: yellow;
+}
