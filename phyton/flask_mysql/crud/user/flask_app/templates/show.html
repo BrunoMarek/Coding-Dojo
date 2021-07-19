@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read(One)</title>
+</head>
+
+<body>
+
+    {% for user in user %}
+    <h1>User {{user.id}}</h1> <a href="/users">Home</a> <br><br>
+    Full Name: {{user.first_name, user.last_name}} <br> <br>
+    Email: {{user.email}} <br> <br>
+    Created On: {{user.created_at}} <br> <br>
+    Last Updated On: {{user.updated_at}} <br>
+    <br>
+    <a href="/users/{{user.id}}/edit">Edit</a>
+    |
+    <a href="/users/{{user.id}}/delete">Delete</a>
+
+    {% endfor %}
+
+</body>
+
+</html>

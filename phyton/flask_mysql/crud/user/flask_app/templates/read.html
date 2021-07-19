@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read(All)</title>
+</head>
+<style>
+    td,th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <form action="/createx/new" method="POST">
+        <h1>All users</h1>
+        {% for user in user %}
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.first_name, user.last_name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.created_at}}</td>
+                <td>
+                    <a href="/users/{{user.id}}">Show</a>
+                    |
+                    <a href="/users/{{user.id}}/edit">Edit</a>
+                    |
+                    <a href="/users/{{user.id}}/delete">Delete</a>
+                </td>
+            </tr>
+        </table>
+        {% endfor %}
+        <a href="users/new">Add a New User</a>
+    </form>
+</body>
+</html>
