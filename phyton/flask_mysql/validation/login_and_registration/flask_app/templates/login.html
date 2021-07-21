@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Reg</title>
+</head>
+
+<body>
+    <h1>Login and Registration</h1>
+    <h2>Register here!</h2>
+    {% with messages = get_flashed_messages() %}
+    <!-- declare a variable called messages -->
+        {% if messages %}
+    <!-- check if there are any messages -->
+            {% for message in messages %}
+    <!-- loop through the messages -->
+                <p>{{message}}</p> <!-- display each message in a paragraph tag -->
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <form action="/home/register" method="POST">
+        First name: <br>
+        <input type="text" name="first_name"> <br>
+        Last name: <br>
+        <input type="text" name="last_name"> <br>
+        Email: <br>
+        <input type="email" name="email"> <br>
+        Password: <br>
+        <input type="password" name="password" id=""> <br>
+        Confirm password: <br>
+        <input type="password" name="confirm_password" id=""> <br><br>
+        <button>Register!</button>
+    </form>
+    <br><br><br>
+    <h1>Login here!</h1>
+    <form action="/home/login" method="POST">
+        Email: <input type="email" name="email" id=""> <br>
+        Password:
+        <input type="password" name="password" id=""> <br>
+        <button>Login!</button>
+    </form>
+    <br><br><br><br>
+    <a href="/delete">Delete Users</a>
+</body>
+
+</html>
